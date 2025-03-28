@@ -1,1 +1,13 @@
 @import 'tailwindcss';
+
+.muuri-item-dragging {
+  z-index: 3;
+}
+
+.muuri-item-releasing {
+  z-index: 2;
+}
+
+.muuri-item-hidden {
+  z-index: 0;
+}

@@ -6,15 +6,5 @@
 </div>
 
 <style>
-  :global(.muuri-item-dragging) {
-    z-index: 3;
-  }
 
-  :global(.muuri-item-releasing) {
-    z-index: 2;
-  }
-
-  :global(.muuri-item-hidden) {
-    z-index: 0;
-  }
 </style>

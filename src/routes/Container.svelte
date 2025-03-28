@@ -1,6 +1,11 @@
 <script lang='ts'>
   import { onMount } from "svelte";
-  let { children = null } = $props()
+  let {
+    children = null,
+    class: className = '',
+  } = $props()
+
+  className = className ? `relative ${className}` : 'relative'
 
   let container: HTMLElement
 
@@ -15,8 +20,7 @@
 
 </script>
 
-<div class='p-4 bg-slate-100 rounded-md max-w-[40ch]'>
-  <div bind:this={container} class='relative space-y-2'>
-    {@render children?.()}
-  </div>
+
+<div bind:this={container} class={className}>
+  {@render children?.()}
 </div>
