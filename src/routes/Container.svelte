@@ -15,7 +15,7 @@
 
 </script>
 
-<div class='p-4 bg-slate-100 rounded-md max-w-[30ch]'>
+<div class='p-4 bg-slate-100 rounded-md max-w-[40ch]'>
   <div bind:this={container} class='relative space-y-2'>
     {@render children?.()}
   </div>
